@@ -19,15 +19,15 @@ def pagelogin(request):
             context= {'form': form,
                       'error': 'The login has been successful'}
            
-            return render(request, 'login.html', context)
+            return render(request, 'index.html', context)
         else:
             context= {'form': form,
                       'error': 'The username and password combination is incorrect'}
             
-            return render(request, 'login.html', context )
+            return render(request, 'index.html', context )
 
     else:
         context= {'form': form}
-        return render(request, 'login.html', context)
+        return render(request, 'index.html', context)
     
     
