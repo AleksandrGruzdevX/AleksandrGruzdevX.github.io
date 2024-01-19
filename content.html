@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html class="server.py" lang="com">
     <head>
-        <input id="message_text" type="text">
-        <button id="send_enter" type="button" class="btn btn-dark" onclick="run()">\/</button>
+        <div class='chat'>
+	<div class='chat-messages'>
+		<div class='chat-messages__content' id='messages'>
+			Загрузка...
+		</div>
+	</div>
+	<div class='chat-input'>
+		<form method='post' id='chat-form'>
+			<input type='text' id='message-text' class='chat-form__input' placeholder='Введите сообщение'> <input type='submit' class='chat-form__submit' value='=>'>
+		</form>
+	</div>
+        </div>
     </head>
