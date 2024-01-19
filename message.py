@@ -18,16 +18,16 @@ def pagelogin(request):
             login(request, user)
             context= {'form': form,
                       'error': 'The login has been successful'}
-            
-            return render(request, 'siteusers/login.html', context)
+           
+            return render(request, 'login.html', context)
         else:
             context= {'form': form,
                       'error': 'The username and password combination is incorrect'}
             
-            return render(request, 'siteusers/login.html', context )
+            return render(request, 'login.html', context )
 
     else:
         context= {'form': form}
-        return render(request, 'siteusers/login.html', context)
+        return render(request, 'login.html', context)
     
     
